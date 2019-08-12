@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Calculator</title>
+ <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+ <script type="text/javascript" src="/script.js""></script>
+ <style>
+ form input.ng-invalid {
+   color: red;
+   font-weight: bold;
+ }
+ </style>
+ </head>
+ 
+ <body ng-app="calcApp"  ng-controller="multiplyController">
+ <h1>Multiply Two Numbers</h1>
+ <form name="myForm">
+ <input type="text" name="num1" ng-model="num1" ng-pattern="/^[0-9]*$/" ng-required="true">
+ <input type="test" name="num2" ng-model="num2" ng-pattern="/^[0-9]*$/" ng-required="true">
+
+ <button multiply ng-disabled="myForm.$invalid"">Multiply</button>
+
+ <label>{{message}}</label>
+ </form>
+ </body>
+</html>
