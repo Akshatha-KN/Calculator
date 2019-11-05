@@ -17,6 +17,6 @@
     "karma": "^4.2.0",
     "karma-chrome-launcher": "^3.0.0",
     "karma-jasmine": "^2.0.1",
-    "mongoose": "^5.6.9"
+    "mongoose": "^5.7.5"
   }
 }
